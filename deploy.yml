@@ -11,10 +11,10 @@
     - name: install python-pip
       yum: name=python-pip state=present update_cache=yes
     - name: Install and upgrade pip
-         pip:
-           name: pip
-           extra_args: --upgrade
-           executable: pip3
+      pip:
+        name: pip
+        extra_args: --upgrade
+        executable: pip3
     - name: Install docker python
       pip: name=docker-py
   tasks:
