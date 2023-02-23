@@ -2,7 +2,6 @@
 - name: "Apache installation using docker"
   hosts: prod
   become: true
-  ansible_python_interpreter: '/usr/bin/python3'
   vars_files:
     - files/secrets/credentials.yml
   pre_tasks:
